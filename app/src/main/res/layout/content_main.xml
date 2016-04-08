@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.qiwoo.weekly75.MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:background="@drawable/shape_border_top"
+        android:gravity="center"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<Button-->
+            <!--android:id="@+id/goto_prev"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="上一页"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/goto_next"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="下一页"/>-->
+
+        <LinearLayout
+            android:id="@+id/bottom_group1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bottom_group1_img"
+                android:layout_width="@dimen/bottom_bar_icon_width"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:alpha="0.7"
+                android:src="@drawable/iconfont_align_left"/>
+            <TextView
+                android:id="@+id/bottom_group1_text"
+                style="@style/bottom_bar_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_latest_str"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_group2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bottom_group2_img"
+                android:layout_width="@dimen/bottom_bar_icon_width"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:alpha="0.7"
+                android:src="@drawable/iconfont_time"/>
+            <TextView
+                android:id="@+id/bottom_group2_text"
+                style="@style/bottom_bar_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_time_str"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_group3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bottom_group3_img"
+                android:layout_width="@dimen/bottom_bar_icon_width"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:alpha="0.7"
+                android:src="@drawable/iconfont_search"/>
+            <TextView
+                android:id="@+id/bottom_group3_text"
+                style="@style/bottom_bar_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_search_str"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_group4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bottom_group4_img"
+                android:layout_width="@dimen/bottom_bar_icon_width"
+                android:layout_height="@dimen/bottom_bar_icon_height"
+                android:alpha="0.7"
+                android:src="@drawable/iconfont_setting"/>
+            <TextView
+                android:id="@+id/bottom_group4_text"
+                style="@style/bottom_bar_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_setting_str"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
